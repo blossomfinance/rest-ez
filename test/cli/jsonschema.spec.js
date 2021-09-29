@@ -54,7 +54,7 @@ describe('Response JSON schema', function () {
         let test = result.tests.find(t =>  t.name === this.test.title);
         expect(test.status).to.equal('fail');
         expect(test.error.name).to.equal('ResponseJSONSchemaValidationError');
-        expect(test.error.message).to.contain('Error occurred during response json schema validation');
+        expect(test.error.message).to.contain('Error opening file');
     });
 
     it('read inline invalid json schema and validate response - should fail', function () {
@@ -70,7 +70,7 @@ describe('Response JSON schema', function () {
         let test = result.tests.find(t =>  t.name === this.test.title);
         expect(test.status).to.equal('fail');
         expect(test.error.name).to.equal('ResponseJSONSchemaValidationError');
-        expect(test.error.message).to.contain('SyntaxError occurred while parsing the input schema');
+        expect(test.error.message).to.contain('Error parsing');
     });
 
     it('invalid input schema  - should fail', function () {
