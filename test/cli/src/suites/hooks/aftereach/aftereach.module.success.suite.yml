@@ -8,6 +8,10 @@ hooks:
   after_each:
     run_type: module
     module:
+      args:
+        - foo
+        - bar
+        - [1, 2, 3]
       function_name: afterEachSyncSuccess
       module_path: modules/after_each.js
 specs:
