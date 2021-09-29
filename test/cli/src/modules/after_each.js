@@ -1,4 +1,4 @@
-function afterEachSyncSuccess() {
+function afterEachSyncSuccess(arg1, arg2, arg3) {
     var keys = Object.keys(this);
     if (keys.length !== 5)
         throw new Error("after each context doesn't have expected keys");
@@ -6,6 +6,16 @@ function afterEachSyncSuccess() {
     var body = JSON.parse(this.response.body);
     if (body.param1 !== 'value2')
         throw new Error('unexpected response');
+
+    if (arg1 !== 'foo') {
+        throw new Error('Unexpected argument 1');
+    }
+    if (arg2 !== 'bar') {
+        throw new Error('Unexpected argument 2');
+    }
+    if (!Array.isArray(arg3) || 3 !== arg3.length) {
+        throw new Error('Unexpected argument 3');
+    }
 }
 
 async function afterEachAsyncSuccess() {
