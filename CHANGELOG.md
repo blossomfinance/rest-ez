@@ -1,3 +1,16 @@
+## [1.4.0](https://github.com/matmar10/just-api/compare/v1.3.1...v1.4.0) (2021-09-30)
+
+
+### Features
+
+* allow passing arguments to inline & module functions ([af14285](https://github.com/matmar10/just-api/commit/af14285eea47ffe8588eaf154e9d95144f54afa0)), closes [#8](https://github.com/matmar10/just-api/issues/8)
+
+
+### Bug Fixes
+
+* handle relative paths to schemas ([26e0452](https://github.com/matmar10/just-api/commit/26e04527f5bb3b2847328887a3cc584778368c68)), closes [#5](https://github.com/matmar10/just-api/issues/5)
+* update test cases to handle new json schema resolution ([1579352](https://github.com/matmar10/just-api/commit/15793525da571d85255d1098f442f16df3b70b0b)), closes [#4](https://github.com/matmar10/just-api/issues/4)
+
 ### [1.3.1](https://github.com/matmar10/just-api/compare/v1.3.0...v1.3.1) (2021-09-19)
 
 
