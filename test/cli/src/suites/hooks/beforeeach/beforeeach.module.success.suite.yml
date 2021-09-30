@@ -8,6 +8,10 @@ hooks:
   before_each:
     run_type: module
     module:
+      args:
+        - foo
+        - bar
+        - [1, 2, 3]
       function_name: beforeEachSyncSuccess
       module_path: modules/before_each.js
 specs:
