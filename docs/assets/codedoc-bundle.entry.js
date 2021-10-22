@@ -14,7 +14,6 @@ import { tocHighlight } from '/Users/matmar10/Projects/OpenSource/just-api/.code
 import { postNavSearch } from '/Users/matmar10/Projects/OpenSource/just-api/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js';postNavSearch();
 import { copyLineLinks } from '/Users/matmar10/Projects/OpenSource/just-api/.codedoc/node_modules/@codedoc/core/dist/es6/components/code/line-links/copy-line-link.js';copyLineLinks();
 import { gatherFootnotes } from '/Users/matmar10/Projects/OpenSource/just-api/.codedoc/node_modules/@codedoc/core/dist/es6/components/footnote/gather-footnotes.js';gatherFootnotes();
-import { reloadOnChange } from '/Users/matmar10/Projects/OpenSource/just-api/.codedoc/node_modules/@codedoc/core/dist/es6/serve/reload.js';reloadOnChange();
 import { ToCPrevNext } from '/Users/matmar10/Projects/OpenSource/just-api/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 import { GithubSearch } from '/Users/matmar10/Projects/OpenSource/just-api/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/github/search.js';
 import { ToCToggle } from '/Users/matmar10/Projects/OpenSource/just-api/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toggle/index.js';
