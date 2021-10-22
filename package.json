@@ -1,8 +1,8 @@
 {
-  "name": "@blossomfinance/just-api",
+  "name": "rest-ez",
   "version": "1.4.0",
-  "description": "Specification based API test framework for HTTP APIs (REST, GraphQL)",
-  "homepage": "https://matmar10.github.io/just-api/",
+  "description": "Easy, spec based API test framework for HTTP APIs (REST, GraphQL)",
+  "homepage": "https://matmar10.github.io/rest-ez/",
   "keywords": [
     "API",
     "mocha",

@@ -1,0 +1,32 @@
+site_name: REST-EZ
+theme:
+  name: material
+  palette:
+    accent: blue
+extra_javascript:
+  - js/extra.js  
+pages:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Basic Concepts: basic-concepts.md
+  - CLI Reference: CLI.md
+  - Features: features.md
+  - Parallel exectuion: running-suites-in-parallel.md
+  - Reporters: reporters.md
+  - Examples: examples.md
+markdown_extensions:
+  - codehilite
+  - admonition
+google_analytics:
+  - UA-120233669-1
+  - auto
+repo_name: REST-EZ
+repo_url: https://github.com/matmar10/rest-ez
+edit_uri: ""
+extra:
+    social:
+      - type: 'github'
+        link: 'https://github.com/matmar10/rest-ez'
+      - type: 'twitter'
+        link: 'https://twitter.com/just_api_'
+
