@@ -227,25 +227,33 @@ REST-EZ docker boilerplate [here](https://github.com/kiranz/docker-just-api-samp
 
 ## Contributing
 
-NOTE: recommend Node `v10.x` since `v12.x` has gulp compatibility issue.
+### Running Tests
 
 1. Install deps `npm install`
-2. Install gulp `npm install -g gulp`
-3. Install test files `gulp`
-3. Install test API `npm run install_testapi`
-4. Run test API `npm run start_testapi`
-5. (in a new window) `npm test`
+3. Install & run test API `npm run test-api`
+5. (In a new window) run tests `npm test`
 
-### Test Structure
+### Releasing
 
-- `test/cli/src/suites/[suite].spec.yaml` contains sample suites/specs
-- `test/cli/[suite].spec.js` contains JS chai/mocha test assertions about the sample suite/specs
+`npm run release`
 
-You may need to create/modify both a sample suite/spec and corresponding JS assertion
+This command should automatically:
 
-## Acknowledgements
+1. Determine next release version from conventional commit history
+2. Update the CHANGELOG.md
+3. Rev package.json, commit, & tag, etc.
+4. Publish to npm
+5. Create a Github release
 
-Enormous thanks to [Kiran Mandadi](https://github.com/kiranz), the original creator of the [just-api](https://kiranz.github.io/just-api/) project form which this project is heavily based (forked).
+### Testing
+
+Tests have two components
+
+- **JS chai/mocha tests** about the sample suite/specs in `test/cli/[suite].spec.js`
+- **REST-EZ suites/specs** in `test/cli/src/suites/[suite].spec.yaml`
+
+You will likely need to create/modify both a **REST-EZ suites/specs`**
+and also the accompanying **JS chai/mocha tests** to add test coverage.
 
 ## Roadmap & TODO
 
@@ -258,3 +266,8 @@ Enormous thanks to [Kiran Mandadi](https://github.com/kiranz), the original crea
     - [ ] Specify node within a schema file using JSON path
     - [ ] Example of how to use faker.js using reusable function
 - [ ] Code Quality - add linter/hinter/prettier or whatever spec is used
+- [ ] Auto-generate test cases from an Open API specification (possible in separate repo)
+
+## Acknowledgements
+
+Enormous thanks to [Kiran Mandadi](https://github.com/kiranz), the original creator of the [just-api](https://kiranz.github.io/just-api/) project form which this project is heavily based (forked).
