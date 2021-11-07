@@ -3,54 +3,54 @@
 Install with [npm](https://npmjs.org):
 
 ``` bash
-npm install just-api
+npm install --save dev rest-ez
 ```
 
-!!! note
-      To run just-api, you will need Node.js v7.10.0 or newer.
+<br>
+
+> ⚠️ Requires node >=7.10
+
+<hr>
 
 ## Getting Started
 
-``` bash
-mkdir specs
-```
-
-``` bash
-vim specs/starwars_service.yml
-```
-
-Enter below specification in YAML file
+Create a file `specs/starwars-service.yml`
 
 ``` yaml
 meta:
-  name: "Star Wars suite"
+  name: Star Wars suite
 configuration:
-  scheme: "https"
-  host: "swapi.co"
-  base_path: "/api"
+  scheme: https
+  host: swapi.dev
+  base_path: /api
 specs:
-  - name: "get Luke Skywalker info"
+  - name: Fetch info about Luke Skywalker
     request:
-      path: "/people/1/"
-      method: "get"
+      path: /people/1/
+      method: get
+      accept: application/json
     response:
       status_code: 200
       headers:
-        - name: "content-type"
-          value: !!js/regexp application/json      
+        - name: content-type
+          value: !!js/regexp application/json
       json_data:
-        - path: "$.name"
-          value: "Luke Skywalker"
+        - path: $.name
+          value: Luke Skywalker
 ```
 
-Back in the terminal
+Run it from the terminal:
 
-``` text
-$ ./node_modules/.bin/just-api
+```bash
+./node_modules/.bin/rest-ez
+```
 
+You should see:
+
+```text
    ✓ get Luke Skywalker info (1216ms)
 
-  Done: specs/starwars_service.yml (Passed)
+  Done: specs/starwars-service.yml (Passed)
 
 0 skipped, 0 failed, 1 passed (1 tests)
 0 skipped, 0 failed, 1 passed (1 suites)
@@ -61,19 +61,24 @@ Duration: 1.3s
 
 Following example tests a GraphQL API that returns location for a given ip address.
 
-Create a YAML suite and run just-api.
+Create a new test suite `specs/graphql-service.yml`
 
 ```yaml
+
 meta:
   name: GraphQL location service
 configuration:
-  host: api.graphloc.com
+  host: graphql.contentful.com
   scheme: https
+  base_path: /content/v1
 specs:
   - name: Get Location of a given ip address
     request:
       method: post
-      path: /graphql
+      path: /spaces/f8bqpb154z8p/environments/master
+      query_params:
+        - name: access_token
+          value: 9d5de88248563ebc0d2ad688d0473f56fcd31c600e419d6c8962f6aed0150599
       headers:
         - name: content-type
           value: application/json
@@ -82,35 +87,37 @@ specs:
           type: json
           content:
             query: >
-                   {
-                    getLocation(ip: "8.8.8.8") {
-                      country {
-                        iso_code
-                      }
-                     }
-                    }
+              {
+                lessonCollection(where: {OR: [{title_contains: "content"}, {title_contains: "SDK"}]}) {
+                  items {
+                    title
+                    slug
+                  }
+                }
+              }
             variables: null
             operationName: null
     response:
       status_code: 200
       json_data:
-        - path: $.data.getLocation.country.iso_code
-          value: US
+        - path: $.data.lessonCollection.items[0].title
+          value: Content model
+        - path: $.data.lessonCollection.items[0].slug
+          value: content-model
+
 ```
 
-### A chained request flow with hook and custom validation
+### Chained Request Flow Using Hook
 
-When you need to test complex chained API flows, run dependencies in hooks to fetch pre-requisite data 
-and pass it to actual test.
-
-Following example shows how to run dependencies using a hook, get data and validating response with a custom validator function.
+Need to test complex chained API flows? Run dependencies in hooks to fetch pre-requisite data
+and pass it to actual test:
 
 ```yaml
 meta:
   name: Starwars suite
 configuration:
   scheme: https
-  host: swapi.co
+  host: swapi.dev
   base_path: /api
 specs:
   - name: get R2-D2 info
@@ -145,15 +152,9 @@ specs:
             function() {
               var jsonData = JSON.parse(this.response.body);
               var r2d2 = jsonData.results.find(result => result.name === 'R2-D2');
-              
+
               if (!r2d2) throw new Error('R2-D2 not returned in search results');
             }
 ```
 
-
-!!! note
-    You can also place custom JS functions in a module and specify the function name and path to module in YAML.
-
-### Using docker to run REST-EZ tests
-If you are looking to use Docker to run REST-EZ, you might want to checkout
-REST-EZ docker boilerplate [here](https://github.com/kiranz/docker-just-api-sample)
+> ℹ️ You can also place custom [JS functions in a module](using-js#module)

@@ -4,7 +4,7 @@ This section covers some high level basic concepts that are important to underst
 
 ## The High-level View
 
-REST-EZ's main purpose is to test HTTP-based APIs without code, and make API testing easy, free and fast for everyone.
+REST-EZ's main purpose is to test HTTP-based APIs without code, and make API testing easy, free, and fast for everyone.
 
 Write your API test specification and tell REST-EZ to run them. API test specification is written in YAML and we call each YAML file a test suite, with the option to write Javascript (using any `npm` module if needed) to implement custom logic.
 
@@ -12,9 +12,16 @@ REST-EZ is written with parallelism as high priority when running test suites, s
 
 ## Putting a test suite together ##
 
-A test suite has three required sections - `meta`, `configuration` and `specs`.
+A test suite has three required sections:
 
-And optional sections `hooks` and `spec_dependencies` (you can find more about these optional parts in later sections of the documentation).
+- [meta](#meta)
+- [configuration](#configuration)
+- [specs](#specs)
+
+Optional sections include:
+
+- [hooks](#hooks)
+- [spec_dependencies](#/docs/features#intersuite-spec-dependencies)
 
 ### The `meta` Section ###
 
@@ -33,7 +40,7 @@ Note: This attribute value applies to every file path you provide in a suite.
 
 ### The `configuration` Section ###
 
-You can use `configuration` section to specify API's host, protocol, port etc. You can also provide a custom Javascript function to `custom_configuration` attribute, so it's easy to 
+You can use `configuration` section to specify API's host, protocol, port etc. You can also provide a custom Javascript function to `custom_configuration` attribute, so it's easy to
 dynamically configure your suite at runtime.
 
 ### The `specs` Section ###
@@ -59,7 +66,7 @@ configuration:
         }  
 specs:
   - name: get Luke Skywalker info
-    request: 
+    request:
       path: /people/1/
       method: get
     response:
@@ -68,7 +75,7 @@ specs:
         - path: $.name
           value: Luke Skywalker     
   - name: get all Star Wars Films
-    request: 
+    request:
       path: /films/   
       method: get
     response:
@@ -79,6 +86,3 @@ specs:
 
 - See the full set of features available in [Features](features).
 - Learn about  **reporters** in [Reporters](reporters).
-
-
-

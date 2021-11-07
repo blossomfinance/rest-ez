@@ -891,7 +891,7 @@ If you want to run only specs matches with a given text or pattern, you can do s
 Following invocation will run all specs whose name matches with 'user' string.
 
 ```bash
-./node_modules/.bin/just-api --grep user specs
+./node_modules/.bin/rest-ez --grep user specs
 ```
 
 ### Additional request options
@@ -923,7 +923,7 @@ A sample spec on how to specify these options:
 When you want to run suites stored in a directory hierarchy spanning more than one nested level, you can invoke the REST-EZ with `--recursive` option.
 
 ```bash
-./node_modules/.bin/just-api --recursive specs
+./node_modules/.bin/rest-ez --recursive specs
 ```
 
 ### Proper error reporting
@@ -941,7 +941,7 @@ When a test with multiple dependencies fails it's hard to track which request ha
 To enable this feature you need to invoke REST-EZ with `--reporter-options logRequests`
 
 ```bash
-./node_modules/.bin/just-api --reporter html --reporter-options logRequests specs
+./node_modules/.bin/rest-ez --reporter html --reporter-options logRequests specs
 ```
 
 ### No callbacks

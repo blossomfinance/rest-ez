@@ -4,10 +4,10 @@
 ### Generating a report ###
 REST-EZ has several built-in reporters, `json`, `specs`, `html` etc.
 
-When you need a HTML report, you can invoke just-api with the `--reporter` option
+When you need a HTML report, you can invoke rest-ez with the `--reporter` option
 
 ```bash
-./node_modules/.bin/just-api --reporter html
+./node_modules/.bin/rest-ez --reporter html
 ```
 
 #### A sample html report:
@@ -23,7 +23,7 @@ REST-EZ can generate reports in multiple formats.
 When you need a HTML report and a JSON report too, you could do something like this
 
 ```bash
-./node_modules/.bin/just-api --reporter html,json
+./node_modules/.bin/rest-ez --reporter html,json
 ```
 
 This way you can generate reports in multiple formats for the same run.
@@ -33,12 +33,12 @@ This way you can generate reports in multiple formats for the same run.
 When built-in reporters do not provide the information you need, you can write a custom reporter and use it:
 
 ```bash
-./node_modules/.bin/just-api --reporter html,custom-reporter-module-name
+./node_modules/.bin/rest-ez --reporter html,custom-reporter-module-name
 ```
 or if the reporter is local js file
 
 ```bash
-./node_modules/.bin/just-api --reporter html,/absolute/path/to/js/file
+./node_modules/.bin/rest-ez --reporter html,/absolute/path/to/js/file
 ```
 
 Reporters in REST-EZ are JavaScript constructors. When instantiated, a reporter receives the test launcher object  along with program options.
@@ -90,5 +90,5 @@ A sample REST-EZ invocation would look like:
 
 
 ```bash
-./node_modules/.bin/just-api --reporter html,json --reporter-options jsonReportDir=reports,jsonReportName=json-report,htmlReportDir=reports,htmlReportName=html-report,logRequests     
+./node_modules/.bin/rest-ez --reporter html,json --reporter-options jsonReportDir=reports,jsonReportName=json-report,htmlReportDir=reports,htmlReportName=html-report,logRequests     
 ```

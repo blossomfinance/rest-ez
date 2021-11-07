@@ -1,9 +1,9 @@
 # CLI Reference
 
-Invoke `just-api` from command-line
+Invoke `rest-ez` from command-line
 
 ```text
-Usage: just-api [options] [files]
+Usage: rest-ez [options] [files]
 
 Options:
 

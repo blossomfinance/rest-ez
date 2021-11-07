@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const {jsonschema2md} = require('@adobe/jsonschema2md');
+const $RefParser = require('@apidevtools/json-schema-ref-parser');
+
+(async () => {
+  const basePath = path.join(__dirname, '/../lib/schema/yaml');
+  const paths = [
+    path.join(basePath, 'suite-config.json'),
+    path.join(basePath, 'suite.json'),
+  ];
+
+  const schemas = await Promise.all(paths.map(async (fileName) => {
+    const content = await $RefParser.dereference(fileName);
+    return {
+      content,
+      fileName
+    }
+  }));
+
+  console.log(schemas);
+
+  const result = jsonschema2md(schemas, {
+    includeReadme: true,
+    // header: true,
+  });
+
+  console.log(result);
+})();

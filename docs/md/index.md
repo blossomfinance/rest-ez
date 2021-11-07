@@ -45,7 +45,7 @@ _or Provide a custom Javascript function to validate the response_
 
 ## Acknowledgements
 
-Enormous thanks to [Kiran Mandadi](https://github.com/kiranz), the original creator of the [just-api](https://kiranz.github.io/just-api/) project form which this project is heavily based (forked).
+Enormous thanks to [Kiran Mandadi](https://github.com/kiranz), the original creator of the [rest-ez](https://kiranz.github.io/rest-ez/) project form which this project is heavily based (forked).
 
 ## Roadmap & TODO
 

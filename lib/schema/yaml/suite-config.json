@@ -1,5 +1,6 @@
 {
   "$id": "http://example.com/example.json",
+  "title": "Suite Config",
   "type": "object",
   "definitions": {},
   "$schema": "http://json-schema.org/draft-06/schema#",
