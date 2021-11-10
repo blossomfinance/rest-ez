@@ -88,6 +88,11 @@
       "hash": "vZo3a95wH27oJJJ8+ixmQw=="
     },
     {
+      "name": "CollapseControl",
+      "filename": "/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js",
+      "hash": "Xr7HYUUSa3lzFxSh+fMmtg=="
+    },
+    {
       "name": "GithubSearch",
       "filename": "/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/github/search.js",
       "hash": "YyttjbRX11tYgT3iwZJrBQ=="

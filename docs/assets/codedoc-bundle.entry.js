@@ -16,6 +16,7 @@ import { copyLineLinks } from '/Users/matmar10/Projects/OpenSource/rest-ez/.code
 import { gatherFootnotes } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/footnote/gather-footnotes.js';gatherFootnotes();
 import { reloadOnChange } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/serve/reload.js';reloadOnChange();
 import { ToCPrevNext } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
+import { CollapseControl } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
 import { GithubSearch } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/github/search.js';
 import { ToCToggle } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toggle/index.js';
 import { DarkModeSwitch } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/darkmode/index.js';
@@ -23,6 +24,7 @@ import { ConfigTransport } from '/Users/matmar10/Projects/OpenSource/rest-ez/.co
 
 const components = {
   'vZo3a95wH27oJJJ8+ixmQw==': ToCPrevNext,
+  'Xr7HYUUSa3lzFxSh+fMmtg==': CollapseControl,
   'YyttjbRX11tYgT3iwZJrBQ==': GithubSearch,
   '8iYm5KC+ozzQAZso6kr3tQ==': ToCToggle,
   'VuteVElYSJBdX52ZFnVrYA==': DarkModeSwitch,
