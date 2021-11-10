@@ -2,7 +2,7 @@
   "name": "@blossomfinance/rest-ez",
   "version": "1.5.0",
   "description": "Easy, spec based API test framework for HTTP APIs (REST, GraphQL)",
-  "homepage": "https://matmar10.github.io/rest-ez/",
+  "homepage": "https://blossomfinance.github.io/rest-ez/",
   "keywords": [
     "API",
     "mocha",
@@ -30,7 +30,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matmar10/rest-ez.git"
+    "url": "https://github.com/blossomfinance/rest-ez.git"
   },
   "engines": {
     "node": ">=7.10.0",
