@@ -1,5 +1,5 @@
 {
-  "name": "rest-ez",
+  "name": "@blossomfinance/rest-ez",
   "version": "1.4.0",
   "description": "Easy, spec based API test framework for HTTP APIs (REST, GraphQL)",
   "homepage": "https://matmar10.github.io/rest-ez/",
