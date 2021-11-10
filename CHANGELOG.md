@@ -1,3 +1,10 @@
+### [1.5.1](https://github.com/blossomfinance/rest-ez/compare/v1.5.0...v1.5.1) (2021-11-10)
+
+
+### Documentation
+
+* rename github owner to corporate sponsor to match npm scope ([e0e6f0b](https://github.com/blossomfinance/rest-ez/commit/e0e6f0b0ecbe7fa6077aff292065194d8a4786d0))
+
 ## [1.5.0](https://github.com/matmar10/rest-ez/compare/v1.4.0...v1.5.0) (2021-11-10)
 
 
