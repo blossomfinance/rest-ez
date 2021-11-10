@@ -50,7 +50,7 @@
     "clean:test-logs": "rm -rf test/cli/src/logs && mkdir test/cli/src/logs",
     "test-api": "npm run test-api:install && npm run test-api:start",
     "test-api:install": "cd test/api && npm install && cp db_original.json db.json",
-    "test-api:start": "npm run testapi:install && cd test/api && node server.js",
+    "test-api:start": "npm run test-api:install && cd test/api && node server.js",
     "test": "npm run clean:test-logs  && mocha --timeout 10000 test/cli/*.spec.js",
     "release": "release-it"
   },
