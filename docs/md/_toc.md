@@ -67,6 +67,7 @@
 
 > :Collapse label=DRY & Reusing Specs
 >
+> [Overview](/docs/reusing-specs/overview)
 > [Looping](/docs/reusing-specs/looping)
 > [Intersuite Spec Dependencies](/docs/reusing-specs/intersuite-spec-deps)
 > [Yaml Pointers](/docs/reusing-specs/yaml-pointers)

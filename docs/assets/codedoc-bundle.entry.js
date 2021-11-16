@@ -14,6 +14,7 @@ import { tocHighlight } from '/Users/matmar10/Projects/OpenSource/rest-ez/.coded
 import { postNavSearch } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js';postNavSearch();
 import { copyLineLinks } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/code/line-links/copy-line-link.js';copyLineLinks();
 import { gatherFootnotes } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/footnote/gather-footnotes.js';gatherFootnotes();
+import { reloadOnChange } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/serve/reload.js';reloadOnChange();
 import { ToCPrevNext } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 import { CollapseControl } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
 import { GithubSearch } from '/Users/matmar10/Projects/OpenSource/rest-ez/.codedoc/node_modules/@codedoc/core/dist/es6/components/misc/github/search.js';
