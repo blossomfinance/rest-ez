@@ -31,28 +31,34 @@
 > [File Uploads](/docs/request/file-uploads)
 > [Additional Options](/docs/request/additional-options)
 
-> :Collapse label=Assertions
->
-> [JSON Pointer](/docs/assertions/json-pointer)
-> [Exact Value](/docs/assertions/exact-value)
-> [Regular Expression](/docs/assertions/regular-expression)
-> [Inline JS Function](/docs/assertions/inline-js-function)
-> [External JS Function](/docs/assertions/external-js-function)
-
 > :Collapse label=Response Validation
 >
-> [Status Code](/docs/resonse-validation/status-code)
-> [Headers](/docs/resonse-validation/headers)
-> [Cookies](/docs/resonse-validation/cookies)
-> > :Collapse label=Body Validation
+> [Overview](/docs/response-validation/overview)
+>
+> > :Collapse label=Assertions
 > >
-> > [JSON Schema Inline](/docs/resonse-validation/body/json-schema-inline)
-> > [JSON Schema File](/docs/resonse-validation/body/json-schema-file)
-> > [Swagger & Open API](/docs/resonse-validation/body/swagger-open-api)
+> > [Exact Value](/docs/response-validation/overview#exact-value)
+> > [Regular Expression](/docs/response-validation/overview#regular-expression)
+> > [Exact Value](/docs/response-validation/overview#exact-value)
+> > [Custom JS Validator](/docs/response-validation/overview#custom-validator)
+>
+> [Status Code](/docs/response-validation/status-code)
+> [Headers & Cookies](/docs/response-validation/overview#general-assertions)
+>
+> > :Collapse label=Body
+> >
+> > [Overview](/docs/response-validation/body/overview)
+> > [Exact Value](/docs/response-validation/body/overview#exact-value)
+> > [Regular Expression](/docs/response-validation/body/overview#regular-expression)
+> > [JSON Path](/docs/response-validation/body/overview#json-path)
+> > [JSON Schema Inline](/docs/response-validation/body/json-schema-inline)
+> > [JSON Schema File](/docs/response-validation/body/json-schema-file)
+> > [Swagger / Open API](/docs/response-validation/body/swagger-open-api)
 
 > :Collapse label=Hooks & JS
 >
 > [Overview](/docs/hooks/overview)
+>
 > > :Collapse label=Context
 > >
 > > [Request Context](/docs/hooks/context/request)

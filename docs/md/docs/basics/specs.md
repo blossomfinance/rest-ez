@@ -2,19 +2,10 @@
 
 Required section that provides a list of individual HTTP requests to run.
 
-> ⚠️ Note: at least one spec is required for the suite to be valid.
-
-## specs
-
 - Type: **array** _required_
 - Example: (see below)
 
-**See also:**
-
-- [Using Hooks Overview](/docs/hooks/overview)
-- [Looping](/docs/reusing-specs/looping)
-- [Examples](https://github.com/blossomfinance/rest-ez/tree/master/test/cli/src/suites)
-- [Specs Property JSON Schema](https://github.com/blossomfinance/rest-ez/blob/master/lib/schema/yaml/suite.json)
+> ⚠️ Note: at least one spec is required for the suite to be valid.
 
 ```yaml | specs/star-wars-service.yml
 meta:
@@ -70,5 +61,14 @@ specs:
     response:
       status_code: 200
 ```
+
+**See also:**
+
+- [Using Hooks Overview](/docs/hooks/overview)
+- [Looping](/docs/reusing-specs/looping)
+- [Examples](https://github.com/blossomfinance/rest-ez/tree/master/test/cli/src/suites)
+- [Specs Property JSON Schema](https://github.com/blossomfinance/rest-ez/blob/master/lib/schema/yaml/suite.json)
+
+<br><br>
 
 > :ToCPrevNext

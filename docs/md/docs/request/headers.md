@@ -65,4 +65,6 @@ specs:
 
 **See also:** [Overview of Hooks](/docs/hooks/overview)
 
+<br><br>
+
 > :ToCPrevNext

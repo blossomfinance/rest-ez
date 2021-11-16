@@ -13,6 +13,8 @@ configuration:
 # http://api.mycompany.com:1337/api/v3
 ```
 
+<br><br>
+
 ## scheme
 
 - Type: **string** _required_
@@ -21,12 +23,16 @@ configuration:
 
 What protocol (scheme) to use. Generally, http or https
 
+<br><br>
+
 ## host
 
 - Type: **string** _required_
 - Example: `localhost`
 
 What server to use.
+
+<br><br>
 
 ## port
 
@@ -35,6 +41,8 @@ What server to use.
 
 A custom port to use. Note that it must be a number.
 
+<br><br>
+
 ## base_path
 
 - Type: **string** _optional_
@@ -42,12 +50,16 @@ A custom port to use. Note that it must be a number.
 
 An optional base path to prepend to each URL.
 
+<br><br>
+
 ## custom_configuration
 
 - Type: **JS Inline Function** | **JS Inline Async Function** | **JS Module** _optional_
 - Example: (see below)
 
 Dynamically set any of the configuration using either an inline or external JS function.
+
+<br>
 
 ### JS Inline Function
 
@@ -79,6 +91,8 @@ configuration:
 # NODE_ENV="" --> https://www.yourcompany.com/api
 ```
 
+<br>
+
 ### JS Inline Async function
 
 **See also:**
@@ -102,6 +116,8 @@ configuration:
         }
 # https//yourcompany.com:3027/api
 ```
+
+<br>
 
 ### JS Module
 

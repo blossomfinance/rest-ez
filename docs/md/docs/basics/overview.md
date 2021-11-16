@@ -1,4 +1,4 @@
-# Overview & Basic Concepts
+# Spec Overview & Basic Concepts
 
 ## The High-level View
 
@@ -6,7 +6,9 @@ REST-EZ's lets you test HTTP-based APIs without code. It aims to make API testin
 
 Write your API test specs in YAML. We call each YAML file a test **suite**.
 
-You also have the option to [write Javascript](/docs/hooks/overview) optionally [using external files and `npm` modules](/docs/hooks/js-modules) if needed to implement custom logic.
+You also have the option to [write Javascript](/docs/hooks/overview).
+
+If needed, you can [use external files & npm modules](/docs/hooks/js-modules).
 
 ## Required Sections
 

@@ -20,6 +20,8 @@ specs:
       status_code: 200
 ```
 
+<br><br>
+
 ## name
 
 - Type: **string** _required_
