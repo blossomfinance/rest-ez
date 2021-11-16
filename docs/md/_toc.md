@@ -20,7 +20,14 @@
 > [Cookies](/docs/request/cookies)
 > [Query Parameters](/docs/request/query-parameters)
 > [Path Parameters](/docs/request/path-parameters)
-> [Body](/docs/request/body)
+>
+> > :Collapse label=Payload Body
+> >
+> > [JSON Body](/docs/request/payload-body/json-body)
+> > [Binary Data](/docs/request/payload-body/binary-data)
+> > [URL Encoded Form Data](/docs/request/payload-body/url-encoded-form-data)
+> > [Multi-Part Form Data](/docs/request/payload-body/multi-part-form-data)
+>
 > [File Uploads](/docs/request/file-uploads)
 > [Additional Options](/docs/request/additional-options)
 

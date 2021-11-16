@@ -4,8 +4,6 @@ Optionally specify a list of cookies to be sent with the request. These will be 
 
 - Type: **array** _optional_
 
-**See also:** [Example: Suite Using Cookies](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/cookies.suite.yml)
-
 ## Basic Example
 
 ```yaml
@@ -26,6 +24,10 @@ specs:
     response:
       status_code: 200
 ```
+
+**See also:** [Example: Suite Using Cookies](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/cookies.suite.yml)
+
+<br><br>
 
 ## Dynamically Set Cookies
 
@@ -55,5 +57,9 @@ specs:
         - path: $.cookie1
           value: cookie1-value
 ```
+
+**See also:** [Example: Suite Using Cookies](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/cookies.suite.yml)
+
+<br><br>
 
 > :ToCPrevNext

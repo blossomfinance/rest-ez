@@ -4,8 +4,6 @@ Modify the URL by specifying parameters to plug into the path, either hard-coded
 
 - Type: **array** _required_
 
-**See also:** [Example: Suite Using Query Params](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/params.suite.yml)
-
 ## Basic Example
 
 ```yaml
@@ -26,6 +24,10 @@ specs:
       status_code: 200
 # GET https://api.mycompany.com/users/4/addresses/1
 ```
+
+**See also:** [Example: Suite Using Query Params](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/params.suite.yml)
+
+<br><br>
 
 ## Dynamically Set Query Parameters
 
@@ -56,5 +58,7 @@ specs:
 ```
 
 **See also:** [Overview of Hooks](/docs/hooks/overview)
+
+<br><br>
 
 > :ToCPrevNext

@@ -4,7 +4,7 @@ Optionally specify a list of headers to be added to the request.
 
 - Type: **array** _optional_
 
-**See also:** [Example: Suite Using Headers](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/headers.suite.yaml)
+<br><br>
 
 ## Basic Example
 
@@ -25,6 +25,10 @@ specs:
     response:
       status_code: 200
 ```
+
+**See also:** [Example: Suite Using Headers](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/headers.suite.yaml)
+
+<br><br>
 
 ## Dynamically Set Headers
 
