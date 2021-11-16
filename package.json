@@ -51,7 +51,7 @@
     "clean": "npm run clean:src && npm run clean:test-logs",
     "clean:src": "rm -rf src",
     "clean:test-logs": "rm -rf test/cli/src/logs && mkdir test/cli/src/logs",
-    "clean:docs": "rm docs/*.html",
+    "clean:docs": "rm docs/**/*.html",
     "test-api": "npm run test-api:install && npm run test-api:start",
     "test-api:install": "cd test/api && npm install && cp db_original.json db.json",
     "test-api:start": "npm run testapi:install && cd test/api && node server.js",
