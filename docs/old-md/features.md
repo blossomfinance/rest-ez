@@ -573,6 +573,7 @@ Updating or overriding request query params in `before test` hook:
     response:
        status_code: 200
 ```
+
 ### Path params
 
 Updating or overriding request Path params in `before test` hook:

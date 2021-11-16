@@ -1,4 +1,4 @@
-# Basic Concepts
+# Overview & Basic Concepts
 
 ## The High-level View
 
@@ -12,9 +12,9 @@ You also have the option to [write Javascript](/docs/hooks/overview) optionally 
 
 A test suite has three required sections:
 
-- [meta](/docs/spec-sections/meta)
-- [configuration](/docs/spec-sections/config)
-- [specs](/docs/spec-sections/specs)
+- [meta](/docs/basics/meta)
+- [configuration](/docs/basics/config)
+- [specs](/docs/basics/specs)
 
 ## Optional Sections
 

@@ -2,9 +2,9 @@
 
 Specs consistent of three basic sections:
 
-- [Meta](/docs/spec-sections/meta) - Metadata about the spec
-- [Configuration](/docs/spec-sections/config) - Basics of where the request should point. Note that config can be [dynamic using functions](/docs/using-js-functions/config)
-- [Specs](/docs/spec-sections/specs) - An array of requests to run & resonse validations to perform against those requests
+- [Meta](/docs/basics/meta) - Metadata about the spec
+- [Configuration](/docs/basics/config) - Basics of where the request should point. Note that config can be [dynamic using functions](/docs/using-js-functions/config)
+- [Specs](/docs/basics/specs) - An array of requests to run & resonse validations to perform against those requests
 
 <br><br>
 
@@ -12,7 +12,7 @@ Specs consistent of three basic sections:
 
 Create a new spec under the `specs/` folder:
 
-```yaml | specs/graphql-service.yml
+```yaml | specs/star-wars-service.yml
 meta:
   name: Star Wars suite
 configuration:
@@ -45,14 +45,14 @@ Run the spec from the terminal:
 ./node_modules/.bin/rest-ez
 > {white Test Suite path/pattern/directory is not specified, Looking for suites in specs directory}
 > {white Found suites:}
-> {white     - specs/graphql-service.yml}
-> 
-> {white Launcher will run suites: specs/graphql-service.yml}
-> 
+> {white     - specs/star-wars-service.yml}
+>
+> {white Launcher will run suites: specs/star-wars-service.yml}
+>
 > {greenBright      ✓ Fetch info about Luke Skywalker (649ms)}
-> 
-> {greenBright   Done: specs/graphql-service.yml (Passed)}
-> 
+>
+> {greenBright   Done: specs/star-wars-service.yml (Passed)}
+>
 > {cyanBright 0 skipped,} {redBright 0 failed,} {greenBright 1 passing} {white (1 tests)}
 > {cyanBright 0 skipped,} {redBright 0 failed,} {greenBright 1 passing} {white (1 suites)}
 > {white Duration: 667ms}
