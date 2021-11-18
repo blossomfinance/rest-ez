@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Blossom/nucleus"
+		},
+		{
+			"path": "../../LaunchGood/open-api"
+		}
+	],
+	"settings": {}
+}
