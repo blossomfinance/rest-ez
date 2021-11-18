@@ -1,8 +1,8 @@
 {
-  "name": "rest-ez",
-  "version": "1.4.0",
+  "name": "@blossomfinance/rest-ez",
+  "version": "1.5.1",
   "description": "Easy, spec based API test framework for HTTP APIs (REST, GraphQL)",
-  "homepage": "https://matmar10.github.io/rest-ez/",
+  "homepage": "https://blossomfinance.github.io/rest-ez/",
   "keywords": [
     "API",
     "mocha",
@@ -30,7 +30,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/matmar10/rest-ez.git"
+    "url": "https://github.com/blossomfinance/rest-ez.git"
   },
   "engines": {
     "node": ">=7.10.0",
@@ -42,19 +42,19 @@
   "scripts": {
     "build": "npm run clean && npm run transpile && npm run dist:files && npm run docs:build",
     "transpile": "babel 'lib/**/*.js' --out-dir .tmp/dist && mv .tmp/dist/lib src",
-    "docs": "npm run docs:serve",
+    "docs": "npm run clean:docs && npm run docs:serve",
     "docs:build": "codedoc build",
     "docs:serve": "codedoc serve",
     "dist:files": "npm run dist:files:json && npm run dist:files:css",
     "dist:files:json": "mkdir -p src/schema/yaml && cp -r lib/schema/yaml/*.json src/schema/yaml/",
     "dist:files:css": "mkdir -p src/reporters/html-src/assets && cp -r lib/reporters/html-src/assets/*.css src/reporters/html-src/assets/",
-    "clean": "npm run clean:src && npm run clean:test-logs",
+    "clean": "npm run clean:src && npm run clean:test-logs && npm run clean:docs",
     "clean:src": "rm -rf src",
     "clean:test-logs": "rm -rf test/cli/src/logs && mkdir test/cli/src/logs",
-    "clean:docs": "rm docs/**/*.html",
+    "clean:docs": "find docs -type f -name '*.html' -delete",
     "test-api": "npm run test-api:install && npm run test-api:start",
     "test-api:install": "cd test/api && npm install && cp db_original.json db.json",
-    "test-api:start": "npm run testapi:install && cd test/api && node server.js",
+    "test-api:start": "npm run test-api:install && cd test/api && node server.js",
     "test": "npm run clean:test-logs  && mocha --timeout 10000 test/cli/*.spec.js",
     "release": "release-it"
   },

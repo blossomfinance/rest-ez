@@ -23,6 +23,6 @@ A test suite has three required sections:
 Optional sections are:
 
 - [hooks](/docs/hooks/overview)
-- [spec_dependencies](/docs/reusing-specs/intersuite-spec-deps)
+- [spec_dependencies](/docs/reusing-specs/run-spec-in-js#spec_dependencies)
 
 > :ToCPrevNext

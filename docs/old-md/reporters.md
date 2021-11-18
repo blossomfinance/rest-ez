@@ -59,7 +59,7 @@ Following events are emitted on the launcher object
   - test skip
   - end (Indicates the end of a suite)
 
-If you are looking to write a custom reporter, take a look at REST-EZ's [JSON Reporter](https://github.com/matmar10/rest-ez/blob/master/lib/reporters/json.js)
+If you are looking to write a custom reporter, take a look at REST-EZ's [JSON Reporter](https://github.com/blossomfinance/rest-ez/blob/master/lib/reporters/json.js)
 
 ### Reporter options ###
 
@@ -90,5 +90,5 @@ A sample REST-EZ invocation would look like:
 
 
 ```bash
-./node_modules/.bin/rest-ez --reporter html,json --reporter-options jsonReportDir=reports,jsonReportName=json-report,htmlReportDir=reports,htmlReportName=html-report,logRequests     
+./node_modules/.bin/rest-ez --reporter html,json --reporter-options jsonReportDir=reports,jsonReportName=json-report,htmlReportDir=reports,htmlReportName=html-report,logRequests
 ```

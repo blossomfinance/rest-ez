@@ -1,3 +1,43 @@
+### [1.5.1](https://github.com/blossomfinance/rest-ez/compare/v1.5.0...v1.5.1) (2021-11-10)
+
+
+### Documentation
+
+* rename github owner to corporate sponsor to match npm scope ([e0e6f0b](https://github.com/blossomfinance/rest-ez/commit/e0e6f0b0ecbe7fa6077aff292065194d8a4786d0))
+
+## [1.5.0](https://github.com/matmar10/rest-ez/compare/v1.4.0...v1.5.0) (2021-11-10)
+
+
+### Features
+
+* allow passing arguments to inline & module functions ([e195791](https://github.com/matmar10/rest-ez/commit/e1957919e463c70b26958fa02cfa5500d87a244c)), closes [#8](https://github.com/matmar10/rest-ez/issues/8)
+* allow use of suite context & args inside loop ([c305b40](https://github.com/matmar10/rest-ez/commit/c305b409bfaf28d58ddc7cd74b7a63b4d26562f1))
+
+
+### Bug Fixes
+
+* handle relative paths to schemas ([45b3dfc](https://github.com/matmar10/rest-ez/commit/45b3dfcac215daaa404198c165f14c56c5ab34ae)), closes [#5](https://github.com/matmar10/rest-ez/issues/5)
+
+
+### Continuous Integration
+
+* fix incorrect set up script for running test API ([2bac8f7](https://github.com/matmar10/rest-ez/commit/2bac8f7c7f009ac923f26838e35815a20d76d98c))
+* make package scripts more consistent ([bb232cc](https://github.com/matmar10/rest-ez/commit/bb232cc9cf228ff71bdfb2cac71508b171f02d25))
+* privately scope to avoid npm similar name rejection ([2fd4c78](https://github.com/matmar10/rest-ez/commit/2fd4c78ee156a43cc11d4b5220e98a15b66fc5a7))
+
+
+### Tests
+
+* adjust expected duration of test ([fff8354](https://github.com/matmar10/rest-ez/commit/fff835480613a57c7599b7bd026e202a572f9117))
+
+
+### Documentation
+
+* add logo & credits ([3a7ba73](https://github.com/matmar10/rest-ez/commit/3a7ba736b1f48f4c8a6a0641e4dd6e3a590a4629))
+* move logo image ([8db6625](https://github.com/matmar10/rest-ez/commit/8db6625f27ff9ebacaffdac0ba6fff3758ce67a7))
+* update README to reflect gulp deprecation ([21b8b05](https://github.com/matmar10/rest-ez/commit/21b8b05d6575b45878bfa9959d6f1291def95830))
+* use @codedoc/cli to generate new docs ([8f992af](https://github.com/matmar10/rest-ez/commit/8f992af486fb2115837dffbb0f0f757546308b29))
+
 ## [1.4.0](https://github.com/matmar10/just-api/compare/v1.3.1...v1.4.0) (2021-09-30)
 
 

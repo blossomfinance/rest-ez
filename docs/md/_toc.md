@@ -58,20 +58,26 @@
 > :Collapse label=Hooks & JS
 >
 > [Overview](/docs/hooks/overview)
+> [JS Inline Functions](/docs/hooks/overview#js-inline-functions)
+> [JS Async Inline Functions](/docs/hooks/overview#js-async-inline-functions)
+> [JS Modules](/docs/hooks/overview#js-modules)
 >
-> > :Collapse label=Context
+> > :Collapse label=Types of Hooks
 > >
-> > [Request Context](/docs/hooks/context/request)
-> > [Response Context](/docs/hooks/context/response)
-> > [Suite Config](/docs/hooks/context/suite-config)
+> > [before_each](/docs/hooks/types#before_all)
+> > [before_each](/docs/hooks/types#after_all)
+> > [before_each](/docs/hooks/types#before_each)
+> > [after_each](/docs/hooks/types#after_each)
+> > [before_test](/docs/hooks/types#before_test)
+> > [after_test](/docs/hooks/types#after_test)
+> > [custom_configuration](/docs/hooks/types#custom_configuration)
 
 > :Collapse label=DRY & Reusing Specs
 >
 > [Overview](/docs/reusing-specs/overview)
 > [Looping](/docs/reusing-specs/looping)
-> [Intersuite Spec Dependencies](/docs/reusing-specs/intersuite-spec-deps)
-> [Yaml Pointers](/docs/reusing-specs/yaml-pointers)
-> [Run Spec in JS](/docs/reusing-specs/run-spec-in-js)
+> [Yaml Anchors](/docs/reusing-specs/yaml-anchors)
+> [Run Existing Spec](/docs/reusing-specs/run-spec-in-js)
 
 > :Collapse label=Command Line Interface (CLI)
 >

@@ -40,6 +40,8 @@ specs:
           value: male
 ```
 
+**See also:** [Example: Suite Using Loops](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/loop.suite.yml)
+
 <br><br>
 
 ## Dynamic Loop Using JS
@@ -84,6 +86,8 @@ specs:
     response:
       status_code: 200
 ```
+
+**See also:** [Example: Suite Using Loops](https://github.com/blossomfinance/rest-ez/blob/3f7b2f4fe69e77b4faaeefcf20ec0aa98863af51/test/cli/src/suites/loop.suite.yml)
 
 <br><br>
 
