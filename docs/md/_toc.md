@@ -93,4 +93,3 @@
 > [Running Suites in Parallel](/docs/cli/running-suites-parallel)
 > [Reporters](/docs/cli/reporters)
 > [Options](/docs/cli/options)
->>>>>>> Stashed changes
