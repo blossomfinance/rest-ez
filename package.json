@@ -1,6 +1,6 @@
 {
   "name": "@blossomfinance/rest-ez",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Easy, spec based API test framework for HTTP APIs (REST, GraphQL)",
   "homepage": "https://blossomfinance.github.io/rest-ez/",
   "keywords": [

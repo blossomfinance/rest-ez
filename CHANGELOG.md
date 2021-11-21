@@ -1,3 +1,15 @@
+### [1.5.3](https://github.com/blossomfinance/rest-ez/compare/v1.5.2...v1.5.3) (2021-11-21)
+
+
+### Documentation
+
+* update readme & all refs to personal repo ([58cd0c1](https://github.com/blossomfinance/rest-ez/commit/58cd0c1ef420087244f7370bec11bddce687a0b2))
+
+
+### Continuous Integration
+
+* rev release-it libs ([e17fe8a](https://github.com/blossomfinance/rest-ez/commit/e17fe8a3049cb5e218fe85e9b4bd7e43809f0609))
+
 * ci: rev latest conventional changelog plugin (14a9a5a)
 * ci: remove clean docs from clean (448b549)
 * ci: remove docs build step from build since non-deterministic based on timestamp (1c88ed4)
