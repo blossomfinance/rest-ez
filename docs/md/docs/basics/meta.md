@@ -5,9 +5,9 @@ Optional section providing info related to the entire suite
 > ⚠️ Note: applies to every file path in the suite
 
 ```yaml | example-spec.yml
-meta:
-  name: Make sure Google loads
-  locate_files_relative: true
+/*!*/meta:
+/*!*/  name: Make sure Google loads
+/*!*/  locate_files_relative: true
 configuration:
   host: www.google.com
   scheme: https

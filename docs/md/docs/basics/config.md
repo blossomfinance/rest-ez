@@ -5,12 +5,22 @@ Controls basics about where the endpoint lives (e.g. server, port).
 These settings apply to all specs in an entire suite file.
 
 ```yaml
-configuration:
-  host: api.mycompany.com
-  scheme: http
-  port: 1337
-  base_path: /api/v3
-# http://api.mycompany.com:1337/api/v3
+meta:
+  name: Make sure Google loads
+  locate_files_relative: true
+/*!*/configuration:
+/*!*/  host: api.mycompany.com
+/*!*/  scheme: http
+/*!*/  port: 1337
+/*!*/  base_path: /api/v3
+specs:
+  - name: Fetch users
+    request:
+      method: get
+      path: /users
+    response:
+      status_code: 200
+# http://api.mycompany.com:1337/api/v3/users
 ```
 
 <br><br>
