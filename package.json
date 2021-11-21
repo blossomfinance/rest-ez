@@ -49,7 +49,7 @@
     "dist:files": "npm run dist:files:json && npm run dist:files:css",
     "dist:files:json": "mkdir -p src/schema/yaml && cp -r lib/schema/yaml/*.json src/schema/yaml/",
     "dist:files:css": "mkdir -p src/reporters/html-src/assets && cp -r lib/reporters/html-src/assets/*.css src/reporters/html-src/assets/",
-    "clean": "npm run clean:src && npm run clean:test-logs && npm run clean:docs",
+    "clean": "npm run clean:src && npm run clean:test-logs",
     "clean:src": "rm -rf src",
     "clean:test-logs": "rm -rf test/cli/src/logs && mkdir test/cli/src/logs",
     "clean:docs": "find docs -type f -name '*.html' -delete",
