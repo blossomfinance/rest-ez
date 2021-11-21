@@ -71,4 +71,34 @@ configuration:
 
 <br><br>
 
+## Retry
+
+Use the `retry` spec level property to automatically retry the spec. Example use case is polling a job until in completed state after a while.
+
+### count
+
+- Type: **integer** _required_
+- Example: `2`
+
+How many times to retry this spec.
+
+### wait_before_each
+
+- Type: **integer** _optional_
+- Example: `10`
+- Values: `http`, `https`
+
+Number of milliseconds (ms) between retry attempts.
+
+```yaml
+  - request:
+      path: /status
+      method: get
+    retry:
+      count: 3
+      wait_before_each: 10
+    response:
+      status_code: 200
+```
+
 > :ToCPrevNext

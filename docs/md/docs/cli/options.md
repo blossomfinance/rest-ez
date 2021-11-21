@@ -1,16 +1,4 @@
-# CLI Reference
-
-Invoke `rest-ez` from command-line:
-
-```bash
-./node_modules/.bin/rest-ez
-> {white Test Suite path/pattern/directory is not specified, Looking for suites in specs directory}
-> {white No test suites found}
-```
-
-By default REST-EZ looks for specs in the `specs/` folder
-
-## Options
+# Options
 
 ```bash
 ./node_modules/bin/rest-ez --help
@@ -30,3 +18,5 @@ By default REST-EZ looks for specs in the `specs/` folder
 > {white -h, --help                             output usage information}
 >
 ```
+
+<br><br>

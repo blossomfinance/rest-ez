@@ -1,7 +1,5 @@
 # Reporters
 
-
-### Generating a report ###
 REST-EZ has several built-in reporters, `json`, `specs`, `html` etc.
 
 When you need a HTML report, you can invoke rest-ez with the `--reporter` option
@@ -10,13 +8,13 @@ When you need a HTML report, you can invoke rest-ez with the `--reporter` option
 ./node_modules/.bin/rest-ez --reporter html
 ```
 
-#### A sample html report:
+### A sample html report:
 
 ![Report](./images/html-report.png)
 
 _Notice that report has request, response details for the failed test_
 
-### Generating reports in multiple formats ###
+### Generating reports in multiple formats
 
 REST-EZ can generate reports in multiple formats.
 
@@ -28,7 +26,7 @@ When you need a HTML report and a JSON report too, you could do something like t
 
 This way you can generate reports in multiple formats for the same run.
 
-### Custom Reporters ###
+### Custom Reporters
 
 When built-in reporters do not provide the information you need, you can write a custom reporter and use it:
 
@@ -61,7 +59,7 @@ Following events are emitted on the launcher object
 
 If you are looking to write a custom reporter, take a look at REST-EZ's [JSON Reporter](https://github.com/blossomfinance/rest-ez/blob/master/lib/reporters/json.js)
 
-### Reporter options ###
+### Reporter Options
 
 REST-EZ accepts an additonal command line option `--reporter-options` that you can use to customize how and where reports are generated and saved.
 
@@ -92,3 +90,4 @@ A sample REST-EZ invocation would look like:
 ```bash
 ./node_modules/.bin/rest-ez --reporter html,json --reporter-options jsonReportDir=reports,jsonReportName=json-report,htmlReportDir=reports,htmlReportName=html-report,logRequests
 ```
+

@@ -29,6 +29,7 @@
 > > [Multi-Part Form Data](/docs/request/payload-body/multi-part-form-data)
 >
 > [File Uploads](/docs/request/file-uploads)
+> [Auto-Retry](/docs/basics/specs#retry)
 > [Additional Options](/docs/request/additional-options)
 
 > :Collapse label=Response Validation
@@ -92,7 +93,8 @@
 
 > :Collapse label=Command Line Interface (CLI)
 >
-> [Debugging](/docs/cli/debugging)
-> [Running Suites in Parallel](/docs/cli/running-suites-parallel)
-> [Reporters](/docs/cli/reporters)
+> [Basics](/docs/cli/basics#command-line-interface-cli)
+> [Debugging](/docs/cli/basics#debugging)
+> [Running in Parallel](/docs/cli/basics#running-suites-in-parallel)
 > [Options](/docs/cli/options)
+> [Reporters](/docs/cli/reporters)
