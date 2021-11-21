@@ -14,52 +14,52 @@ configuration:
   scheme: https
   host: swapi.dev
   base_path: /api
-specs:
-  - name: Fetch info about Luke Skywalker
-    request:
-      path: /people/1/
-      method: get
-      accept: application/json
-    response:
-      status_code: 200
-      headers:
-        - name: content-type
-          value: !!js/regexp application/json
-      json_data:
-        - path: $.name
-          value: Luke Skywalker
-    after_test:
-      run_type: inline
-      inline:
-        function: !!js/function >
-          function() {
-            this.suite.person = JSON.parse(this.response.body);
-          }
-  - name: Fetch each movie that Luke Skywalker is in
-    loop:
-      type: dynamic
-      dynamic:
-        run_type: inline
-        inline:
-          function: !!js/function  >
-            function() {
-              return this.suite.person.films;
-            }
-    before_test:
-      run_type: inline
-      inline:
-        function: !!js/function >
-          function() {
-            this.test.path_params = {
-              id : this.loopItem.match(/\/api\/films\/(\d+)\//)[1]
-            };
-          }
-    request:
-      path: /films/{id}/
-      method: get
-      accept: application/json
-    response:
-      status_code: 200
+/*!*/specs:
+/*!*/  - name: Fetch info about Luke Skywalker
+/*!*/    request:
+/*!*/      path: /people/1/
+/*!*/      method: get
+/*!*/      accept: application/json
+/*!*/    response:
+/*!*/      status_code: 200
+/*!*/      headers:
+/*!*/        - name: content-type
+/*!*/          value: !!js/regexp application/json
+/*!*/      json_data:
+/*!*/        - path: $.name
+/*!*/          value: Luke Skywalker
+/*!*/    after_test:
+/*!*/      run_type: inline
+/*!*/      inline:
+/*!*/        function: !!js/function >
+/*!*/          function() {
+/*!*/            this.suite.person = JSON.parse(this.response.body);
+/*!*/          }
+/*!*/  - name: Fetch each movie that Luke Skywalker is in
+/*!*/    loop:
+/*!*/      type: dynamic
+/*!*/      dynamic:
+/*!*/        run_type: inline
+/*!*/        inline:
+/*!*/          function: !!js/function  >
+/*!*/            function() {
+/*!*/              return this.suite.person.films;
+/*!*/            }
+/*!*/    before_test:
+/*!*/      run_type: inline
+/*!*/      inline:
+/*!*/        function: !!js/function >
+/*!*/          function() {
+/*!*/            this.test.path_params = {
+/*!*/              id : this.loopItem.match(/\/api\/films\/(\d+)\//)[1]
+/*!*/            };
+/*!*/          }
+/*!*/    request:
+/*!*/      path: /films/{id}/
+/*!*/      method: get
+/*!*/      accept: application/json
+/*!*/    response:
+/*!*/      status_code: 200
 ```
 
 **See also:**

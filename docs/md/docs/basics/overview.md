@@ -1,14 +1,13 @@
 # Spec Overview & Basic Concepts
 
+REST-EZ's lets you test HTTP-based APIs without code (declarative, instead of procedural). It aims to make API testing easy, free, and fast for everyone.
+
 ## The High-level View
 
-REST-EZ's lets you test HTTP-based APIs without code. It aims to make API testing easy, free, and fast for everyone.
+- **suite** - a `yaml` file that includes a list of one or more **specs**
+- **spec** - block that defines a request & response dialog, with optional [assertions](/docs/response-validation/overview) and [lifecycle hooks](/docs/hooks/overview)
 
-Write your API test specs in YAML. We call each YAML file a test **suite**.
-
-You also have the option to [write Javascript](/docs/hooks/overview).
-
-If needed, you can [use external files & npm modules](/docs/hooks/js-modules).
+You can [write custom JS](/docs/hooks/overview/types) including [external JS files](/docs/hooks/types#js-from-external-files).
 
 ## Required Sections
 

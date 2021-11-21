@@ -58,19 +58,30 @@
 > :Collapse label=Hooks & JS
 >
 > [Overview](/docs/hooks/overview)
-> [JS Inline Functions](/docs/hooks/overview#js-inline-functions)
-> [JS Async Inline Functions](/docs/hooks/overview#js-async-inline-functions)
-> [JS Modules](/docs/hooks/overview#js-modules)
 >
-> > :Collapse label=Types of Hooks
+> > :Collapse label=Function Types
 > >
-> > [before_each](/docs/hooks/types#before_all)
-> > [before_each](/docs/hooks/types#after_all)
-> > [before_each](/docs/hooks/types#before_each)
-> > [after_each](/docs/hooks/types#after_each)
-> > [before_test](/docs/hooks/types#before_test)
+> > [JS Inline Functions](/docs/hooks/types#js-synchronous-functions)
+> > [JS Async Inline Functions](/docs/hooks/types#js-async-functions)
+> > [JS Modules](/docs/hooks/types#js-from-external-files)
+>
+> > :Collapse label=Suite-Level Hooks
+> >
+> > [before_all](/docs/hooks/list#before_all)
+> > [after_all](/docs/hooks/list#after_all)
+> > [before_each](/docs/hooks/list#before_each)
+> > [after_each](/docs/hooks/list#after_each)
+>
+> > :Collapse label=Spec-Level Hooks
+> >
+> > [before_test](/docs/hooks/list#before_test)
 > > [after_test](/docs/hooks/types#after_test)
-> > [custom_configuration](/docs/hooks/types#custom_configuration)
+>
+> > :Collapse label=Context
+> >
+> > [Suite Context](/docs/hooks/context#suite)
+> > [Test Context](/docs/hooks/context#test)
+> > [Response Context](/docs/hooks/context#response)
 
 > :Collapse label=DRY & Reusing Specs
 >

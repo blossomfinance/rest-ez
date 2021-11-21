@@ -1,12 +1,14 @@
 # Validation Overview
 
-- [Status Code](/docs/response-validation/status-code)
 - [General Assertions](#general-assertions)
     - [Exact Value](#exact-value)
     - [Regular Expression](#regular-expression)
     - [Custom Validator](#custom-validator)
         - [Inline JS Function](#inline-js-function)
         - [JS Module](#js-module)
+- [Status Code](/docs/response-validation/status-code)
+- [Cookies](/docs/response-validation/cookies)
+- [Headers](/docs/response-validation/headers)
 - [Body Validation](/docs/response-balidation/body/overview)
     - [JSON Path](/docs/response-validation/body/json-path)
     - [JSON Schema Inline](/docs/response-validation/body/json-schema-inline)
