@@ -40,6 +40,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
+    "start": "npm run docs",
     "build": "npm run clean && npm run transpile && npm run dist:files && npm run docs:build",
     "transpile": "babel 'lib/**/*.js' --out-dir .tmp/dist && mv .tmp/dist/lib src",
     "docs": "npm run clean:docs && npm run docs:serve",
