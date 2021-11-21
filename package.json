@@ -40,14 +40,19 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "npm run clean && npm run transpile && npm run dist:files",
+    "start": "npm run docs",
+    "build": "npm run clean && npm run transpile && npm run dist:files && npm run docs:build",
     "transpile": "babel 'lib/**/*.js' --out-dir .tmp/dist && mv .tmp/dist/lib src",
+    "docs": "npm run clean:docs && npm run docs:serve",
+    "docs:build": "codedoc build",
+    "docs:serve": "codedoc serve",
     "dist:files": "npm run dist:files:json && npm run dist:files:css",
     "dist:files:json": "mkdir -p src/schema/yaml && cp -r lib/schema/yaml/*.json src/schema/yaml/",
     "dist:files:css": "mkdir -p src/reporters/html-src/assets && cp -r lib/reporters/html-src/assets/*.css src/reporters/html-src/assets/",
-    "clean": "npm run clean:src && npm run clean:test-logs",
+    "clean": "npm run clean:src && npm run clean:test-logs && npm run clean:docs",
     "clean:src": "rm -rf src",
     "clean:test-logs": "rm -rf test/cli/src/logs && mkdir test/cli/src/logs",
+    "clean:docs": "find docs -type f -name '*.html' -delete",
     "test-api": "npm run test-api:install && npm run test-api:start",
     "test-api:install": "cd test/api && npm install && cp db_original.json db.json",
     "test-api:start": "npm run test-api:install && cd test/api && node server.js",
@@ -78,6 +83,8 @@
     "url-parse": "1.4.3"
   },
   "devDependencies": {
+    "@adobe/jsonschema2md": "^6.1.4",
+    "@codedoc/cli": "^0.2.8",
     "@release-it/conventional-changelog": "^3.0.1",
     "babel-cli": "^6.24.1",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -93,7 +100,8 @@
     "cross-spawn": "6.0.5",
     "del": "3.0.0",
     "mocha": "5.2.0",
-    "release-it": "^14.10.1"
+    "release-it": "^14.10.1",
+    "yamljs": "^0.3.0"
   },
   "bin": {
     "rest-ez": "./bin/rest-ez"
