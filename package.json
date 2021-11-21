@@ -85,7 +85,7 @@
   "devDependencies": {
     "@adobe/jsonschema2md": "^6.1.4",
     "@codedoc/cli": "^0.2.8",
-    "@release-it/conventional-changelog": "^3.0.1",
+    "@release-it/conventional-changelog": "^3.3.0",
     "babel-cli": "^6.24.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-array-includes": "^2.0.3",
