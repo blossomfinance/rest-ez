@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "npm run docs",
-    "build": "npm run clean && npm run transpile && npm run dist:files && npm run docs:build",
+    "build": "npm run clean && npm run transpile && npm run dist:files",
     "transpile": "babel 'lib/**/*.js' --out-dir .tmp/dist && mv .tmp/dist/lib src",
     "docs": "npm run clean:docs && npm run docs:serve",
     "docs:build": "codedoc build",
