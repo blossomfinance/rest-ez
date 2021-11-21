@@ -1,4 +1,4 @@
-![REST-EZ](https://github.com/matmar10/rest-ez/blob/master/docs/images/logo.png?raw=true "REST-EZ Logo")
+![REST-EZ](https://github.com/blossomfinance/rest-ez/blob/master/docs/images/logo.png?raw=true "REST-EZ Logo")
 
 ## What is it?
 
@@ -24,43 +24,13 @@ Choose to validate any or all of following
 
 _or Provide a custom Javascript function to validate the response_
 
-[Read the docs to learn more](https://matmar10.github.io/rest-ez/)
+[Read the docs to learn more](https://blossomfinance.github.io/rest-ez/)
 
 
 ## Links
 
-- [Documentation](https://matmar10.github.io/rest-ez/)
-- [Issue Tracker](https://github.com/matmar10/rest-ez/issues)
-
-## Features
-
-- Runs test suites in parallel/serial mode
-- Supports all widely used HTTP methods
-- Supports x-www-form-urlencoded requests, Multipart requests, File uploads
-- Built-in Response Validation Constructs (Headers, Cookies, Status code, JSON body, JSON schema)
-- Custom Response validator functions
-- Supports running custom inline or module javascript sync/async functions
-- Supports Hooks (Before All, After All, Before Each, After Each, Before Test, After Test)
-- Custom suite configuration
-- Chained Request flows
-- Define/override Request path, query params, path params, headers, body at runtime
-- Suite and test context for reuse
-- Supports importing specs from one or more test suites
-- Intrasuite and Intersuite spec dependencies
-- Reusing test specification
-- Retry failed tests
-- Looping: Generate 'n' number of tests with a list
-- Built-in HTML, JSON reporters
-- Can generate reports in multiple formats for the same run
-- Logging HTTP request/response data for failed tests
-- Proper error reporting
-- Can run tests matching with a given pattern/string
-- Skipping tests with specification
-- Disable or Enable redirections
-- Reports test duration
-- Allows user to plug-in custom reporters
-
-[See all features](https://kiranz.github.io/just-api/features/)
+- [Documentation](https://blossomfinance.github.io/rest-ez/)
+- [Issue Tracker](https://github.com/blossomfinance/rest-ez/issues)
 
 
 ## Getting Started
@@ -97,7 +67,7 @@ specs:
       status_code: 200
       headers:
         - name: content-type
-          value: !!js/regexp application/json     
+          value: !!js/regexp application/json
       json_data:
         - path: $.name
           value: Luke Skywalker
@@ -212,18 +182,94 @@ specs:
 Note: You can also place custom JS functions in a module and specify the function name, module path in YAML to import.
 
 More advanced stuff can be done with REST-EZ. Documentation says it all.
-Take a look at [REST-EZ Website](http://kiranz.github.io/just-api/) for detailed documentation.
+Take a look at [REST-EZ Website](http://blossomfinance.github.io/rest-ez/) for detailed documentation.
 
-If you are looking to use Docker to run REST-EZ, you might want to checkout
-REST-EZ docker boilerplate [here](https://github.com/kiranz/docker-just-api-sample)
 
 ## Maintainers
 
-- [Matthew J. Martin](matthew.mar10@blossomfinance.com)
+[Matthew J. Martin](matthew.mar10@blossomfinance.com)
 
 ## License
 
-[MIT-licensed](https://github.com/kiranz/just-api/blob/master/LICENSE)
+[MIT-licensed](https://github.com/blossomfinance/rest-ez/blob/master/LICENSE)
+
+## Documentation
+
+- [Installation](/docs/getting-started/installation)
+- [Getting Started](/docs/getting-started/rest-api)
+- [Basic Concepts](/docs/basics/overview)
+- [Requests](/docs/request/request-basics)
+    - [Headers](/docs/request/headers)
+    - [Cookies](/docs/request/cookies)
+    - [Query Parameters](/docs/request/query-parameters)
+    - [Path Parameters](/docs/request/query-parameters)
+    - **Request Body**
+        - [JSON Body](/docs/request/payload-body/json-body)
+        - [Binary Data](/docs/request/payload-body/binary-data)
+        - [URL Encoded Form Data](/docs/request/payload-body/url-encoded-form-data)
+        - [URL Encoded Form Data](/docs/request/payload-body/url-encoded-form-data)
+        - [Multi-Part Form Data](/docs/request/payload-body/multi-part-form-data)
+    - [File Uploads](/docs/request/file-uploads)
+    - [Additional Options](/docs/request/additional-options)
+- [Response Validation](/docs/response-validation/overview)
+    - [Status Code Validation](/docs/response-validation/status-code)
+    - [Cookie Validation](/docs/response-validation/cookies)
+    - [Header Validation](/docs/response-validation/headers)
+    - [Body Validation](/docs/response-balidation/body/overview)
+        - [JSON Path](/docs/response-validation/body/json-path)
+        - [JSON Schema Inline](/docs/response-validation/body/json-schema-inline)
+        - [JSON Schema File](/docs/response-validation/body/json-schema-file)
+        - [Swagger / Open API](/docs/response-validation/body/swagger-open-api)
+- [Lifecycle Hooks](/docs/hooks/overview)
+    - **Hook Types**
+        - [JS Inline Functions](/docs/hooks/types#js-synchronous-functions)
+        - [JS Async Inline Functions](/docs/hooks/types#js-async-functions)
+        - [JS Modules](/docs/hooks/types#js-from-external-files)
+    - **List of Hooks**
+        - [before_all](/docs/hooks/list#before_all)
+        - [after_all](/docs/hooks/list#after_all)
+        - [before_each](/docs/hooks/list#before_each)
+        - [after_each](/docs/hooks/list#after_each)
+        - [before_test](/docs/hooks/list#before_test)
+        - [after_test](/docs/hooks/list#after_test)
+    - **Hook Context**
+        - [Suite Context](/docs/hooks/context#suite)
+        - [Test Context](/docs/hooks/context#test)
+        - [Response Context](/docs/hooks/context#response)
+- [Reusing Specs & DRY](/docs/reusing-specs/overview)
+    - [Looping](/docs/reusing-specs/looping)
+    - [Yaml Anchors](/docs/reusing-specs/yaml-anchors)
+    - [Run Existing Spec](/docs/reusing-specs/run-spec-in-js)
+- [Command Line Interface (CLI)](/docs/cli)
+    - [Debugging](/docs/cli#debugging)
+    - [Running Suites in Parallel](/docs/cli#running-suites-parallel)
+    - [Reporters](/docs/cli#reporters)
+    - [Options](/docs/cli#options)
+
+## Acknowledgements
+
+👏👏👏 **Enormous thanks to [Kiran Mandadi](https://github.com/kiranz)**,
+
+Original creator of [rest-ez](https://kiranz.github.io/rest-ez/) upon which this project is based (forked).
+
+👏👏👏 **Thanks to corporate sponsors**
+
+- [Blossom Finance](https://blossomfinance.com/) ethical investments in micro businesses
+- [LaunchGood](https://www.launchgood.com/) crowdfunding incredible Muslims
+
+## Roadmap & TODO
+
+- ✅ ~~Full support for de-referencing schema $refs~~
+- ✅ ~~Allow specifying node within a schema file using JSON pointer~~
+- ✅ ~~Pass arguments to inline or module-based functions to allow creater re-use~~~
+- ✅ ~~Documentation improvements~~
+    - ✅ ~~Upgrade markdown static site generator (something without python dependency)~~
+    - ✅ ~~Example function with arguments usage~~
+    - ✅ ~~JSON schema validation de-referencing schema $refs~~
+    - ✅ ~~Specify node within a schema file using JSON path~~
+    - [ ] Examples directly using files within _node\_modules_
+- [ ] Example of how to use faker.js using reusable function
+- [ ] Code Quality - add linter/hinter/prettier or whatever spec is used
 
 ## Contributing
 
@@ -255,19 +301,33 @@ Tests have two components
 You will likely need to create/modify both a **REST-EZ suites/specs`**
 and also the accompanying **JS chai/mocha tests** to add test coverage.
 
-## Roadmap & TODO
 
-- [x] Full support for de-referencing schema $refs
-- [x] Allow specifying node within a schema file using JSON pointer
-- [x] Pass arguments to inline or module-based functions to allow creater re-use
-- [ ] Documentation improvements
-    - [ ] Example function with arguments usage
-    - [ ] JSON schema validation de-referencing schema $refs
-    - [ ] Specify node within a schema file using JSON path
-    - [ ] Example of how to use faker.js using reusable function
-- [ ] Code Quality - add linter/hinter/prettier or whatever spec is used
-- [ ] Auto-generate test cases from an Open API specification (possible in separate repo)
+## Features
 
-## Acknowledgements
+Mostly here for SEO purposes:
 
-Enormous thanks to [Kiran Mandadi](https://github.com/kiranz), the original creator of the [just-api](https://kiranz.github.io/just-api/) project form which this project is heavily based (forked).
+- Runs test suites in parallel/serial mode
+- Supports all widely used HTTP methods
+- Supports x-www-form-urlencoded requests, Multipart requests, File uploads
+- Built-in Response Validation Constructs (Headers, Cookies, Status code, JSON body, JSON schema)
+- Custom Response validator functions
+- Supports running custom inline or module javascript sync/async functions
+- Supports Hooks (Before All, After All, Before Each, After Each, Before Test, After Test)
+- Custom suite configuration
+- Chained Request flows
+- Define/override Request path, query params, path params, headers, body at runtime
+- Suite and test context for reuse
+- Supports importing specs from one or more test suites
+- Intrasuite and Intersuite spec dependencies
+- Reusing test specification
+- Retry failed tests
+- Looping: Generate 'n' number of tests with a list
+- Built-in HTML, JSON reporters
+- Can generate reports in multiple formats for the same run
+- Logging HTTP request/response data for failed tests
+- Proper error reporting
+- Can run tests matching with a given pattern/string
+- Skipping tests with specification
+- Disable or Enable redirections
+- Reports test duration
+- Allows user to plug-in custom reporters
