@@ -1,4 +1,4 @@
-# REST API Spec
+# Basic Usage
 
 Specs consistent of three basic sections:
 

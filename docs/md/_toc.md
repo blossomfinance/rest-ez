@@ -3,7 +3,7 @@
 > :Collapse label=Getting Started
 >
 > [Installation](/docs/getting-started/installation)
-> [REST API](/docs/getting-started/rest-api)
+> [Basic Usage](/docs/getting-started/basic-usage)
 > [GraphQL](/docs/getting-started/graphql)
 
 > :Collapse label=Basics
