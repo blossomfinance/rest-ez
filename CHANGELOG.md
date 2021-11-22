@@ -1,3 +1,11 @@
+### [1.5.4](https://github.com/blossomfinance/rest-ez/compare/v1.5.3...v1.5.4) (2021-11-22)
+
+
+### Documentation
+
+* change github pages repo owner & rebuild generated docs ([915cb88](https://github.com/blossomfinance/rest-ez/commit/915cb88f78dc5833f956356cb7d99c6ee031cbf1))
+* rename & move getting started REST API for clarity ([13ec5c8](https://github.com/blossomfinance/rest-ez/commit/13ec5c89174816cec045d691c8950b7b54d32272))
+
 ### [1.5.3](https://github.com/blossomfinance/rest-ez/compare/v1.5.2...v1.5.3) (2021-11-21)
 
 
