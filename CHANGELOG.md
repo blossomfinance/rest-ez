@@ -1,3 +1,31 @@
+## [1.6.0](https://github.com/blossomfinance/rest-ez/compare/v1.5.4...v1.6.0) (2022-04-03)
+
+
+### Features
+
+* add tap output reporter ([6eb5f64](https://github.com/blossomfinance/rest-ez/commit/6eb5f641d6038a88704cd7476195d15c95480c9b))
+
+
+### Bug Fixes
+
+* remove console output & make logging optional to allow bash chainability ([8ee835f](https://github.com/blossomfinance/rest-ez/commit/8ee835f19c9a04b156c0be0192c114bbd7645ce0))
+
+
+### Code Refactoring
+
+* rename core classes to match new project name ([815d0a2](https://github.com/blossomfinance/rest-ez/commit/815d0a219d5bd5a6cf2413dc3e040bdf2cf884e5))
+
+
+### Documentation
+
+* update cli help for available reporters ([034900f](https://github.com/blossomfinance/rest-ez/commit/034900fb86c28269630fd28cae5d45fdfd1259a6))
+* update roadmap to include completed & latest ideas ([1c87620](https://github.com/blossomfinance/rest-ez/commit/1c87620e3d87147bec70b90d99a6c87ff6a40879))
+
+
+### Continuous Integration
+
+* add latest package lock based on new deps ([47777fb](https://github.com/blossomfinance/rest-ez/commit/47777fb5ca60e371dd05bd3a25428d95f7cca3cf))
+
 ### [1.5.4](https://github.com/blossomfinance/rest-ez/compare/v1.5.3...v1.5.4) (2021-11-22)
 
 
