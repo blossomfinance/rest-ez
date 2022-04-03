@@ -262,14 +262,21 @@ Original creator of [rest-ez](https://kiranz.github.io/rest-ez/) upon which this
 - ✅ ~~Full support for de-referencing schema $refs~~
 - ✅ ~~Allow specifying node within a schema file using JSON pointer~~
 - ✅ ~~Pass arguments to inline or module-based functions to allow creater re-use~~~
-- ✅ ~~Documentation improvements~~
+- [ ] ~~Documentation improvements~~
     - ✅ ~~Upgrade markdown static site generator (something without python dependency)~~
     - ✅ ~~Example function with arguments usage~~
     - ✅ ~~JSON schema validation de-referencing schema $refs~~
     - ✅ ~~Specify node within a schema file using JSON path~~
     - [ ] Examples directly using files within _node\_modules_
+- [ ] Reporter improvements & enhancements
+    - ✅ ~~TAP (test anything protocol) support~~
+    - [ ] JSON output to console or file option
+    - [ ] Clearly document reporter options in CLI
+- [ ] Replace commander with yargs for improved CLI docs & defaults
 - [ ] Example of how to use faker.js using reusable function
 - [ ] Code Quality - add linter/hinter/prettier or whatever spec is used
+- [ ] Update to use ECMA6 modules & deprecate Babel (possibly TypeScript?)
+
 
 ## Contributing
 
